@@ -118,10 +118,7 @@ const Header = () => {
 
           <div>{user ? user.name : null}</div>
 
-          <Link
-            to={user ? "/account" : "/login"}
-            className="bg-gray-500 text-white rounded-full border border-gray-700 overflow-hidden"
-          >
+          <div className="bg-gray-500 text-white rounded-full border border-gray-700 overflow-hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -134,6 +131,12 @@ const Header = () => {
                 clipRule="evenodd"
               />
             </svg>
+          </div>
+          <Link
+            to={user ? "/account" : "/login"}
+            className="font-bold hover:bg-gray-200 hover:rounded-md px-1"
+          >
+            <span>Click Here</span>
           </Link>
 
           <div onClick={logoutHandler}>
