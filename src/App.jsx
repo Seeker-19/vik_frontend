@@ -20,7 +20,7 @@ import CarsPage from "./pages/CarsPage.jsx"; // Updated for cars listing
 import CarForm from "./pages/CarForm.jsx"; // Updated for adding/editing cars
 
 import { getToken } from "./api.js";
-import MyCarsPage from "./pages/myCarsPage.jsx";
+import MyCarsPage from "./pages/MyCarsPage.jsx";
 
 function App() {
   const { user, setUser, loading, setLoading } = useContext(Context);
